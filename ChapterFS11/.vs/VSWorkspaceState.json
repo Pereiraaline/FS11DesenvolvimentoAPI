@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Models"
   ],
-  "SelectedNode": "\\appsettings.Development.json",
+  "SelectedNode": "\\Models\\Livro.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -2,12 +2,15 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel;
+using ChapterFS11.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ChapterFS11.Controllers
 {
     [Produces("application/json")] //saida de dados em json
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class LivroController : ControllerBase
     {
         private readonly LivroRepository? _livroRepository;
@@ -53,9 +56,9 @@ namespace ChapterFS11.Controllers
 
         }
 
+        [Authorize(Roles = "1")]
         [HttpPost]
-
-        public IActionResult Cadastrar(Livro l)
+        public IActionResult Cadastrar( Livro l)
         {
             try
             {

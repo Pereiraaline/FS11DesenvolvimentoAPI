@@ -1,4 +1,4 @@
-﻿using ChapterFS11.Contexts;
+﻿using ChapterFS11.Context;
 using ChapterFS11.Interfaces;
 using ChapterFS11.Models;
 
@@ -6,9 +6,9 @@ namespace ChapterFS11.Repositories
 {
     public class UsuarioRepository : IUsuarioRepository
     {
-        private readonly Sqlcontext? _context;
+        private readonly SqlContext? _context;
 
-        public UsuarioRepository(Sqlcontext context)
+        public UsuarioRepository(SqlContext context)
         {
             _context = context;
         }
@@ -56,7 +56,7 @@ namespace ChapterFS11.Repositories
 
         public Usuario Login(string email, string senha)
         {
-            throw new NotImplementedException();
+           return _context.Usuarios.FirstOrDefault( usuario => usuario.Email == email && usuario.Senha == senha);
         }
     }
 }

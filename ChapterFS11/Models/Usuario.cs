@@ -2,6 +2,8 @@
 {
     public class Usuario
     {
+        public int id;
+
         public int Id { get; set; }
 
         public string? Email { get; set; }

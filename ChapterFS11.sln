@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChapterFS11", "ChapterFS11\ChapterFS11.csproj", "{CEE26D83-DE20-431E-AF62-1B7342587FCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChapterFS11", "ChapterFS11\ChapterFS11.csproj", "{CEE26D83-DE20-431E-AF62-1B7342587FCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteIntegracao", "TesteIntegracao\TesteIntegracao.csproj", "{BCBDCE1F-C36E-4C7C-91E1-928E75C9A98A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CEE26D83-DE20-431E-AF62-1B7342587FCD} = {CEE26D83-DE20-431E-AF62-1B7342587FCD}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{CEE26D83-DE20-431E-AF62-1B7342587FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEE26D83-DE20-431E-AF62-1B7342587FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEE26D83-DE20-431E-AF62-1B7342587FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCBDCE1F-C36E-4C7C-91E1-928E75C9A98A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCBDCE1F-C36E-4C7C-91E1-928E75C9A98A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCBDCE1F-C36E-4C7C-91E1-928E75C9A98A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCBDCE1F-C36E-4C7C-91E1-928E75C9A98A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
